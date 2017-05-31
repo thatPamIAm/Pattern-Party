@@ -233,7 +233,6 @@ label::after {
 .flexible-hr {
   margin: 70px 0px 100px 225px;
   width: 80%;
-
 }
 
 .row {
@@ -288,7 +287,7 @@ h2 {
   padding: 5px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 715px) {
 
   .row {
     display: flex;
@@ -322,9 +321,102 @@ h2 {
   .flex-button {
     width: 92%;
   }
+}
+
+@media (max-width:550px) {
 
   .flexible-hr {
     width: 25%;
-    margin-bottom: 100px;
+    margin: 10px auto 50px;
+  }
+}
+
+/*HEADER SECTION*/
+/*=====================================================*/
+/*=======================================================*/
+
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    height: 100px;
+    width: 85%;
+    background-color: #D1D2D3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 35px 0px 0px 20px;
+}
+
+hr.css-header-hr {
+  margin: 50px 0px 100px 225px;
+  width: 80%;
+}
+
+.circle-placeholder {
+  height: 65px;
+  margin: 15px 15px 15px 20px;
+}
+
+.search-box {
+  border: solid 1px #666666;
+  height: 20px;
+  width: 21%;
+  margin: 30px 0px 0px 15px;
+  background-color: #F2F2F2;
+  padding: 10px 0px 10px 12px
+}
+
+.magnify {
+  height: 20px;
+  float: left;
+  margin-right: 10px;
+}
+
+.menu {
+  display: none;
+  color: #808080;
+  font-size: 1.5em;
+}
+
+@media (max-width: 990px) {
+
+  ul {
+      display: flex;
+      flex-direction: column;
+      height: 375px;
+      position: relative;
+    }
+
+  .search-box {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .main-li {
+    background-color: #b8b9ba;
+  }
+
+  .menu {
+    display: block;
+    float: right;
+    margin: 35px 20px;
+  }
+}
+
+@media (max-width:550px) {
+
+  hr.css-header-hr {
+    margin: 10px auto 50px;
+    width: 25%;
   }
 }
