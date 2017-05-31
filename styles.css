@@ -164,7 +164,6 @@ label::after {
 
 .view-code-link {
   color: white;
-  /*font-weight: 300;*/
   font-size: 1.25em;
   letter-spacing: .05em;
   text-decoration: none;
@@ -397,9 +396,14 @@ hr.css-header-hr {
   ul {
       display: flex;
       flex-direction: column;
-      height: 375px;
       position: relative;
+      height: 375px;
     }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+  }
 
   .search-box {
     width: 90%;
@@ -414,6 +418,10 @@ hr.css-header-hr {
     display: block;
     float: right;
     margin: 35px 20px;
+  }
+
+  li.main-li:hover .d-content {
+    display: block;
   }
 }
 
